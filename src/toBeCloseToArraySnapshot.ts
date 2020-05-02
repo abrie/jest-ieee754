@@ -69,7 +69,7 @@ export default function toBeCloseToArraySnapshot(
   }
 
   return {
-    message: () => 'message c',
+    message: () => '',
     actual: serialize(received),
     count: state.count,
     expected: '',
