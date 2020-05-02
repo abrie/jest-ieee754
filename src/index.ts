@@ -1,4 +1,4 @@
-import toBeCloseToArraySnapshot from './toBeCloseToArraySnapshot'
-import toBeCloseToNumber from './toBeCloseToNumber'
+import toBeCloseToArraySnapshot from './toBeCloseToArraySnapshot';
+import toBeCloseToNumber from './toBeCloseToNumber';
 
-export { toBeCloseToArraySnapshot, toBeCloseToNumber }
+export { toBeCloseToArraySnapshot, toBeCloseToNumber };

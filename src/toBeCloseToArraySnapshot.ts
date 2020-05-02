@@ -1,5 +1,5 @@
 import { ulpDistance } from '@eirba/ieee754';
-import type { Context } from './types';
+import { Context } from './types';
 import State from './state';
 
 function serialize(arr: number[]): string {

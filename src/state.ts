@@ -7,7 +7,7 @@
 
 import * as fs from 'fs';
 import { utils } from 'jest-snapshot';
-import type { Context, SnapshotState } from './types';
+import { Context, SnapshotState } from './types';
 
 export default class State {
   private currentTestName: string;
