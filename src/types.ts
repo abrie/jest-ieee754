@@ -1,9 +1,5 @@
-/* eslint-disable import/no-extraneous-dependencies */
-/* tslint:disable:no-implicit-dependencies */
-/* Because this is Jest extension, and Jest is present. */
-
-import { MatcherState } from 'expect';
 import { Context } from 'jest-snapshot';
+export type Context = Context;
 
 /* SnapshotState interface is made to match https://github.com/facebook/jest/blob/4a59daa8715bde6a1b085ff7f4140f3a337045aa/packages/jest-snapshot/src/State.ts#L54
  */
@@ -23,8 +19,6 @@ export interface SnapshotState {
   unmatched: number;
   matched: number;
 }
-
-export type Context;
 
 declare global {
   namespace jest {
