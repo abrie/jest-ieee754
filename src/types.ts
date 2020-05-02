@@ -24,7 +24,7 @@ export interface SnapshotState {
   matched: number;
 }
 
-export SnapshotContext = Context
+export type Context;
 
 declare global {
   namespace jest {

@@ -1,5 +1,5 @@
 import { ulpDistance } from '@eirba/ieee754';
-import type { SnapshotContext } from './types';
+import type { Context } from './types';
 import State from './state';
 
 function serialize(arr: number[]): string {
@@ -29,7 +29,7 @@ function compare(want: number[], got: number[], maxUlp: bigint): boolean {
 }
 
 export default function toBeCloseToArraySnapshot(
-  this: SnapshotContext,
+  this: Context,
   received: number[]
 ) {
   const state = new State(this);
