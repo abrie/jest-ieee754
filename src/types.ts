@@ -24,7 +24,7 @@ declare global {
   namespace jest {
     interface Matchers<R> {
       toBeCloseToNumber(a: Number, maxUlp?: bigint): CustomMatcherResult;
-      toBeCloseToArraySnapshot(): CustomMatcherResult;
+      toBeCloseToArraySnapshot(maxUlp?: bigint): CustomMatcherResult;
     }
   }
 }

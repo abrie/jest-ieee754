@@ -30,13 +30,13 @@ function compare(want: number[], got: number[], maxUlp: bigint): boolean {
 
 export default function toBeCloseToArraySnapshot(
   this: Context,
-  received: number[]
+  received: number[],
+  maxUlp: bigint = BigInt(4)
 ) {
   const state = new State(this);
 
   const snapshot = state.getSnapshot();
   const expected = tryDeserialize(snapshot);
-  const maxUlp = BigInt(1);
 
   const pass = compare(expected, received, maxUlp);
 
