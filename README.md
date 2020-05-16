@@ -1,8 +1,9 @@
-# Jest extension for comparing IEEE754 numbers by ULP distance.
+# Jest extension for matching numbers by ULP distance
 
-This is a Jest extension wrapper around [`@eirba/ieee754`](https://github.com/abrie/ieee754). It provides the following matchers:
+This extension wraps [`@eirba/ieee754`](https://github.com/abrie/ieee754) for use in [Jest](https://github.com/facebook/jest) unit tests. The following matchers are provided:
 
--`toBeCloseToNumber(a:number):boolean` -`toBeCloseToArraySnapshot():boolean`
+- `toBeCloseToNumber(a:number, maxUlp?:bigint):boolean`
+- `toBeCloseToArraySnapshot():boolean`
 
 ## Install
 
@@ -11,3 +12,7 @@ This is a Jest extension wrapper around [`@eirba/ieee754`](https://github.com/ab
 or
 
 - `npm install @eirba/jest-ieee754`
+
+## Examples
+
+For usage examples, please see the [unit tests](https://github.com/abrie/jest-ieee754/tree/master/test).
